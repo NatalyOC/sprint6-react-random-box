@@ -15,12 +15,15 @@
 <body>
   <div id="container-react"></div>
   <script type="text/babel">
-    function randomColors(){
-      var color='#'+(Math.random().toString(16) + "000000").substring(2,8);
+    // Función que permite obtener el color de forma aleatoria
+    let randomColors=()=>{
+      let color='#'+(Math.random().toString(16) + "000000").substring(2,8);
       return color;
     }
+  
     const COM=React.Component;
-    const options = {
+    // Objeto que contiene los estilos,id
+    let options = {
       style: {
         width: '900px',
         height:'200px',
@@ -31,11 +34,9 @@
       },
       id: 'main-jsx'
     };
-    class Box extends COM{
-      
-      render(){
-          
-         return(
+    class Box extends COM{      
+      render(){          
+        return(
           <div {...options}>
             <h2 style={{color:randomColors(), padding:'5px'}}>REACT-JSX</h2>
           </div> 
