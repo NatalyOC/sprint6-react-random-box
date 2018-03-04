@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <!--Enlazar la libreria de react-->
+   <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+   <!--Enlazar el dom virtual --> 
+   <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script> 
+   <!--Babel para jsx-->
+   <script crossorigin src = "https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
+  <title>Random Box</title>
+</head>
+<body>
+  <div id="container-react"></div>
+  <script type="text/babel">
+    function randomColors(){
+      var color='#'+(Math.random().toString(16) + "000000").substring(2,8);
+      return color;
+    }
+    const COM=React.Component;
+    const options = {
+      style: {
+        width: '900px',
+        height:'200px',
+        margin:'2px',
+        textAlign:'center',
+        background:randomColors() 
+        
+      },
+      id: 'main-jsx'
+    };
+    class Box extends COM{
+      
+      render(){
+          
+         return(
+          <div {...options}>
+            <h2 style={{color:randomColors(), padding:'5px'}}>REACT-JSX</h2>
+          </div> 
+        ) 
+      }
+    };
+    
+    ReactDOM.render(
+      <Box/>,document.getElementById('container-react'));
+  </script>
+</body>
+</html>
