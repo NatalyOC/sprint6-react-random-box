@@ -14,4 +14,4 @@ Crear una página que cambia de color aleatoreamente.
 
 
 Desarrollo:
-![](https://ibb.co/e8n3yS)
+![](http://ibb.co/e8n3yS)
