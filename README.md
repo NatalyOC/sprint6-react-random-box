@@ -9,7 +9,7 @@
 
 Crear una página que cambia de color aleatoreamente.
 
-** Random Box con React **
+**Random Box con React**
 
 
 
