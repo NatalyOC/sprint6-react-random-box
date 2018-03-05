@@ -14,4 +14,4 @@ Crear una página que cambia de color aleatoreamente.
 
 
 Desarrollo:
-![random react](http://subefotos.com/ver/?705ea3f13253b1d2774f82905fdfc7f7o.png)
+![react-random](https://user-images.githubusercontent.com/32288071/36978837-9713a048-2053-11e8-930b-15c8ac814cb1.png)
